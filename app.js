@@ -27,7 +27,7 @@ lines = lines.map((line,idx) => {
     return ' '
 })
 lines = lines.map((line)=>{
-    //Mengubah jarak antar titik dua
+    //Mengubah jarak antara titik dua
     if (line.search(":") > 0) {
         line = line.slice(0,line.search(":")) + " ".repeat(colonPosition+3+5-line.search(":"))+ ':' + " ".repeat(2) + line.slice(line.search(":")+1)
     }
